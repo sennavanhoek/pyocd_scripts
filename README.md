@@ -1,6 +1,13 @@
 # Playing around with pyOCD
 
-pyOCD installation:
+### Script index:
+
+| Script        	  | Description                                                                          	|
+|-------------------|------------------------------------------------------------------------------------------|
+| usart_over_swd.py | Hooks the 'send_USART_str' function to print the output without actual USART connection.  |
+| id_cores.py       | Prints the core type, revision/patch and if an FPU is available e.g. "Cortex-M4 r0p1 with FPU".|
+
+### pyOCD quickstart:
 ```
 $ pip install pyocd
 ```
@@ -14,11 +21,3 @@ $ pyocd list
  	 
 $ pyocd pack install stm32f407vgtx
 ```
-
-
-## Script index:
-
-| Script        	  | Description                                                                          	|
-|-------------------|------------------------------------------------------------------------------------------|
-| usart_over_swd.py | Hooks the 'send_USART_str' function to print the output without actual USART connection.  |
-| id_cores.py       | Prints the core type, revision/patch and if an FPU is available e.g. "Cortex-M4 r0p1 with FPU".|
