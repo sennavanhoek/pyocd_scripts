@@ -6,6 +6,7 @@
 |-------------------|------------------------------------------------------------------------------------------|
 | usart_over_swd.py | Hooks the 'send_USART_str' function to print the output without actual USART connection.  |
 | id_cores.py       | Prints a discription the core(s) e.g. "Cortex-M4 r0p1 with FPU".|
+| function_cyclecount.py | Uses DWT registers measure the cycles a given function takes and displays the results. |
 
 ### pyOCD quickstart:
 ```
