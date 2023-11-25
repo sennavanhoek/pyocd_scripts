@@ -39,11 +39,12 @@ def print_str(target, char_pointer):
     
 
 with ConnectHelper.session_with_chosen_probe() as session:
+    elf = "example.elf"
     target = session.target
-    target.elf = "example.elf"
+    target.elf = elf
     
     #Optionally flash board
-    #FileProgrammer(session).program("example.elf")
+    #FileProgrammer(session).program(elf)
     
     target.reset_and_halt()
     
