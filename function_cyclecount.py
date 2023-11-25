@@ -85,8 +85,8 @@ def step_trough(target, target_function):
 
 with ConnectHelper.session_with_chosen_probe() as session:
     # Settings
-    elf = "test_bench/test_bench.elf"
-    target_function = "sample_b"
+    elf = "example.elf"
+    target_function = "foo"
     style = "fancy_grid"
     
     #Setup
